@@ -1,5 +1,5 @@
-@import url(../variable/variable.css);
-@import url(../reset/reset.css);
+@import url(../variable/style.css);
+@import url(../reset/style.css);
 
 header,
 nav {
