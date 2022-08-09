@@ -34,7 +34,7 @@ document.onreadystatechange = function () {
     setTimeout(function () {
       document.querySelector('#loader').style.display = 'none';
       document.querySelector('body').style.visibility = 'visible';
-    }, 2000); // ganti 1000 dengan delaynya, dalam hitungan milidetik
+    }, 9000); // ganti 1000 dengan delaynya, dalam hitungan milidetik
   }
 };
 
@@ -47,3 +47,10 @@ document.onreadystatechange = function () {
 //     navbar.classList.remove('active');
 //   }
 // };
+
+
+const chk = document.getElementById('chk');
+
+chk.addEventListener('change', () => {
+    document.body.classList.toggle('dark');
+});
