@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/icon.webp" type="image/png" />
+    <title>CineMax</title>
+    <link rel="stylesheet" href="./css/main/main.css" />
+    <link rel="stylesheet" href="./css/media/media-query.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,900;1,100;1,900&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Loader -->
+    <div id="loader" class="center"></div>
+    <!-- Navbar -->
+    <div class="container" id="home">
+      <header class="">
+        <div class="navbar">
+          <button class="navbar-menu-btn">
+            <span class="one"></span>
+            <span class="two"></span>
+            <span class="three"></span>
+          </button>
+          <a href="#" class="navbar-brand">C<span>MAXX</span></a>
+
+          <nav>
+            <ul class="navbar-nav">
+              <li><a href="#home" class="navbar-link">Home</a></li>
+              <li><a href="#category" class="navbar-link">Category</a></li>
+              <li><a href="#trending" class="navbar-link indicator">Trending</a></li>
+              <li><a href="#soon" class="navbar-link">Coming Soon</a></li>
+            </ul>
+          </nav>
+
+          <!-- Search dan sign in -->
+
+          <div class="navbar-actions">
+            <form action="#" class="navbar-form">
+              <input type="text" name="search" class="navbar-form-search" placeholder="Search Film ..." />
+
+              <button class="navbar-form-btn">
+                <ion-icon name="search-outline"></ion-icon>
+              </button>
+
+              <button class="navbar-form-close">
+                <ion-icon name="close-circle-outline"></ion-icon>
+              </button>
+            </form>
+
+            <!-- Search Button pada layar kecil -->
+            <button class="navbar-search-btn">
+              <ion-icon name="search-outline"></ion-icon>
+            </button>
+            <a href="#" class="navbar-signin">
+              <span>Sign In</span>
+              <ion-icon name="log-in-outline"></ion-icon>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <!-- Section Main -->
+
+      <main>
+        <section class="banner">
+          <div class="banner-card">
+            <img src="img/avengers-1.jpeg" class="banner-img" />
+            <div class="card-content">
+              <div class="card-info">
+                <div class="genre">
+                  <ion-icon name="film"></ion-icon>
+                  <span>Laga/Fiksi Ilmiah</span>
+                </div>
+                <div class="year">
+                  <ion-icon name="calendar"></ion-icon>
+                  <span>2019</span>
+                </div>
+                <div class="duration">
+                  <ion-icon name="time"></ion-icon>
+                  <span>3h 1m</span>
+                </div>
+                <div class="quality">4K</div>
+              </div>
+              <h2 class="card-title">Avengers : Endgame</h2>
+            </div>
+          </div>
+        </section>
+
+        <!-- Movies Section -->
+
+        <section class="movies">
+          <!-- Filter Bar Section -->
+          <div class="filter-bar">
+            <div class="filter-dropdowns">
+              <select name="genre" class="genre">
+                <option value="All Genres">All Gendres</option>
+                <option value="action">Action</option>
+                <option value="fantasy">Fantasy</option>
+                <option value="horror">Horror</option>
+                <option value="thriller">Thriller</option>
+                <option value="mystery">Mystery</option>
+              </select>
+
+              <select name="year" class="year">
+                <option value="All years">All The Years</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+              </select>
+            </div>
+
+            <div class="filter-radio">
+              <input type="radio" name="grade" id="featured" checked />
+              <label for="featured">Featured</label>
+
+              <input type="radio" name="grade" id="popular" />
+              <label for="popular">Popular</label>
+
+              <input type="radio" name="grade" id="newest" />
+              <label for="newest">Trend</label>
+
+              <div class="checked-radio-bg"></div>
+            </div>
+          </div>
+
+          <!-- Movies Grid Section -->
+
+          <div class="movies-grid">
+            <div class="movie-card">
+              <div class="card-head">
+                <img src="img/2.jpg" class="card-img" />
+
+                <div class="card-overlay">
+                  <div class="bookmark">
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star-outline"></ion-icon>
+                    <span>8.5</span>
+                  </div>
+
+                  <div class="play">
+                    <ion-icon name="play-circle-outline"></ion-icon>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Minions - Rise Of Gru</h3>
+                <div class="card-info">
+                  <span class="genre">Komedi/Petualangan</span>
+                  <span class="year">2022</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="movie-card">
+              <div class="card-head">
+                <img src="img/1.jpg" class="card-img" />
+
+                <div class="card-overlay">
+                  <div class="bookmark">
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star-outline"></ion-icon>
+                    <span>7.9</span>
+                  </div>
+
+                  <div class="play">
+                    <ion-icon name="play-circle-outline"></ion-icon>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Thor:Love and Thunder</h3>
+                <div class="card-info">
+                  <span class="genre">Laga/Petualangan</span>
+                  <span class="year">2022</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="movie-card">
+              <div class="card-head">
+                <img src="img/3.jpg" class="card-img" />
+
+                <div class="card-overlay">
+                  <div class="bookmark">
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star-outline"></ion-icon>
+                    <span>9.0</span>
+                  </div>
+
+                  <div class="play">
+                    <ion-icon name="play-circle-outline"></ion-icon>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Lightyear</h3>
+                <div class="card-info">
+                  <span class="genre">Petualangan/Fiksi Ilmiah</span>
+                  <span class="year">2022</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="movie-card">
+              <div class="card-head">
+                <img src="img/4.jpg" class="card-img" />
+
+                <div class="card-overlay">
+                  <div class="bookmark">
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star-outline"></ion-icon>
+                    <span>7.9</span>
+                  </div>
+
+                  <div class="play">
+                    <ion-icon name="play-circle-outline"></ion-icon>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Jurassic World Dominion</h3>
+                <div class="card-info">
+                  <span class="genre">Laga/Fiksi Ilmiah</span>
+                  <span class="year">2022</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="movie-card">
+              <div class="card-head">
+                <img src="img/5.jpg" class="card-img" />
+
+                <div class="card-overlay">
+                  <div class="bookmark">
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star-outline"></ion-icon>
+                    <span>9.5</span>
+                  </div>
+
+                  <div class="play">
+                    <ion-icon name="play-circle-outline"></ion-icon>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Top Gun 2</h3>
+                <div class="card-info">
+                  <span class="genre">Laga/Petualangan</span>
+                  <span class="year">2022</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="movie-card">
+              <div class="card-head">
+                <img src="img/captain-marvel.jpg" class="card-img" />
+
+                <div class="card-overlay">
+                  <div class="bookmark">
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star-outline"></ion-icon>
+                    <span>10</span>
+                  </div>
+
+                  <div class="play">
+                    <ion-icon name="play-circle-outline"></ion-icon>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Captain Marvel</h3>
+                <div class="card-info">
+                  <span class="genre">Laga/Fiksi Ilmiah</span>
+                  <span class="year">2019</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="movie-card">
+              <div class="card-head">
+                <img src="img/pengabdi-setan.jpg" class="card-img" />
+
+                <div class="card-overlay">
+                  <div class="bookmark">
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star-outline"></ion-icon>
+                    <span>8.2</span>
+                  </div>
+
+                  <div class="play">
+                    <ion-icon name="play-circle-outline"></ion-icon>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Pengabdi Setan 2</h3>
+                <div class="card-info">
+                  <span class="genre">Horor/Misteri</span>
+                  <span class="year">2022</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="movie-card">
+              <div class="card-head">
+                <img src="img/pengabdi-setan2.jpg" class="card-img" />
+
+                <div class="card-overlay">
+                  <div class="bookmark">
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star-outline"></ion-icon>
+                    <span>9</span>
+                  </div>
+
+                  <div class="play">
+                    <ion-icon name="play-circle-outline"></ion-icon>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Pengabdi Setan</h3>
+                <div class="card-info">
+                  <span class="genre">Horor/Misteri</span>
+                  <span class="year">2017</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="movie-card">
+              <div class="card-head">
+                <img src="img/eternals.jpg" class="card-img" />
+
+                <div class="card-overlay">
+                  <div class="bookmark">
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star-outline"></ion-icon>
+                    <span>7.5</span>
+                  </div>
+
+                  <div class="play">
+                    <ion-icon name="play-circle-outline"></ion-icon>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Eternals</h3>
+                <div class="card-info">
+                  <span class="genre">Laga/Fantasi</span>
+                  <span class="year">2021</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="movie-card">
+              <div class="card-head">
+                <img src="img/panther.jpg" class="card-img" />
+
+                <div class="card-overlay">
+                  <div class="bookmark">
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star-outline"></ion-icon>
+                    <span>9.7</span>
+                  </div>
+
+                  <div class="play">
+                    <ion-icon name="play-circle-outline"></ion-icon>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Black Panther</h3>
+                <div class="card-info">
+                  <span class="genre">Laga/Petualangan</span>
+                  <span class="year">2018</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="movie-card">
+              <div class="card-head">
+                <img src="img/dark-knight.jpg" class="card-img" />
+
+                <div class="card-overlay">
+                  <div class="bookmark">
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star-outline"></ion-icon>
+                    <span>7.9</span>
+                  </div>
+
+                  <div class="play">
+                    <ion-icon name="play-circle-outline"></ion-icon>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">The Dark Knight</h3>
+                <div class="card-info">
+                  <span class="genre">Laga/Petualangan</span>
+                  <span class="year">2008</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="load-more">Load More</button>
+        </section>
+
+        <!-- Section category -->
+
+        <section class="category" id="category">
+          <h2 class="section-heading">Category</h2>
+
+          <div class="category-grid">
+            <div class="category-card">
+              <img src="img/6.jpg" class="card-img" />
+              <div class="name">Petualangan</div>
+              <div class="total">60</div>
+            </div>
+
+            <div class="category-card">
+              <img src="img/captain-marvel.jpg" class="card-img" />
+              <div class="name">Fantasi</div>
+              <div class="total">80</div>
+            </div>
+
+            <div class="category-card">
+              <img src="img/pengabdi-setan.jpg" class="card-img" />
+              <div class="name">Horor</div>
+              <div class="total">90</div>
+            </div>
+
+            <div class="category-card">
+              <img src="img/3.jpg" class="card-img" />
+              <div class="name">Fiksi Ilmiah</div>
+              <div class="total">120</div>
+            </div>
+
+            <div class="category-card">
+              <img src="img/dune.jpg" class="card-img" />
+              <div class="name">Action</div>
+              <div class="total">87</div>
+            </div>
+
+            <div class="category-card">
+              <img src="img/mariposa.jpg" class="card-img" />
+              <div class="name">Romance</div>
+              <div class="total">50</div>
+            </div>
+
+            <div class="category-card">
+              <img src="img/pengabdi-setan2.jpg" class="card-img" />
+              <div class="name">Thriller</div>
+              <div class="total">20</div>
+            </div>
+
+            <div class="category-card">
+              <img src="img/mr-bean.jpg" class="card-img" />
+              <div class="name">Comedy</div>
+              <div class="total">15</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Trending Section -->
+        <div class="trending" id="trending">
+          <h2 class="section-heading">Trending Topic</h2>
+
+          <div class="live-grid">
+            <div class="live-card">
+              <div class="card-head">
+                <img src="img/4-2.jpg" class="card-img" />
+                <div class="live-badge">TRENDING</div>
+                <div class="total-viewers">20.779.000</div>
+                <div class="play">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                </div>
+              </div>
+
+              <div class="card-body">
+                <img src="img/HBO-Logo-square.jpg" class="avatar" />
+                <h3 class="card-title">Jurassic World Dominion</h3>
+              </div>
+            </div>
+
+            <div class="live-card">
+              <div class="card-head">
+                <img src="img/pengabdi-setan.jpg" class="card-img" />
+                <div class="live-badge">TRENDING</div>
+                <div class="total-viewers">2.589.000</div>
+                <div class="play">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                </div>
+              </div>
+
+              <div class="card-body">
+                <img src="img/netflix.png" class="avatar" />
+                <h3 class="card-title">Pengadi Setan : Communion</h3>
+              </div>
+            </div>
+
+            <div class="live-card">
+              <div class="card-head">
+                <img src="img/1.jpg" class="card-img" />
+                <div class="live-badge">TRENDING</div>
+                <div class="total-viewers">50.489.000</div>
+                <div class="play">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                </div>
+              </div>
+
+              <div class="card-body">
+                <img src="img/netflix.png" class="avatar" />
+                <h3 class="card-title">Thor : Love and Thunder</h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Coming Soon Section Film -->
+          <div class="coming-soon" id="soon">
+            <h2 class="section-heading">Coming Soon</h2>
+            <div class="live-grid">
+              <div class="live-card">
+                <div class="card-head">
+                  <img src="img/black-panther-2.jpg" class="card-img" />
+                  <div class="live-badge">TRENDING</div>
+                  <div class="total-viewers">Coming Soon</div>
+                  <div class="play">
+                    <ion-icon name="play-circle-outline"></ion-icon>
+                  </div>
+                </div>
+  
+                <div class="card-body">
+                  <img src="img/R.png" class="avatar" />
+                  <h3 class="card-title">Black Panther : Wakanda Forever</h3>
+                </div>
+              </div>
+
+              <div class="live-card">
+                <div class="card-head">
+                  <img src="img/ant-man-2.jpg" class="card-img" />
+                  <div class="live-badge">TRENDING</div>
+                  <div class="total-viewers">Coming Soon</div>
+                  <div class="play">
+                    <ion-icon name="play-circle-outline"></ion-icon>
+                  </div>
+                </div>
+  
+                <div class="card-body">
+                  <img src="img/R.png" class="avatar" />
+                  <h3 class="card-title">Ant-Man and The Wasp : Quantumania</h3>
+                </div>
+              </div>
+
+              <div class="live-card">
+                <div class="card-head">
+                  <img src="img/captain-marvel-2.jpg" class="card-img" />
+                  <div class="live-badge">TRENDING</div>
+                  <div class="total-viewers">Coming Soon</div>
+                  <div class="play">
+                    <ion-icon name="play-circle-outline"></ion-icon>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <img src="img/R.png" class="avatar" />
+                  <h3 class="card-title">The Marvels</h3>
+                </div>
+              </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- Footer Section -->
+      <footer>
+        <div class="footer-content">
+          <div class="footer-brand">
+            <a href="#" class="navbar-brand1">C<span>MAXX</span></a>
+            <p class="slogan">"To remember, the images and logos used are just an example
+              not really used natively in a company, just personal"
+            </p>
+
+            <div class="social-link">
+              <a href="#">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+              <a href="#">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+              <a href="#">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+              <a href="#">
+                <ion-icon name="logo-tiktok"></ion-icon>
+              </a>
+              <a href="#">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <ul>
+              <h4 class="link-heading">CineMaxx</h4>
+
+              <li class="link-item"><a href="#">About us</a></li>
+              <li class="link-item"><a href="#">My profile</a></li>
+              <li class="link-item"><a href="#">Pricing plans</a></li>
+              <li class="link-item"><a href="#">Contacts</a></li>
+            </ul>
+
+            <ul>
+              <h4 class="link-heading">Browse</h4>
+
+              <li class="link-item"><a href="#">Trending Movies</a></li>
+              <li class="link-item"><a href="#">News Update</a></li>
+              <li class="link-item"><a href="#">News Tech</a></li>
+              <li class="link-item"><a href="#">Streaming Library</a></li>
+            </ul>
+
+            <ul>
+              <li class="link-item"><a href="#">Coming Soon</a></li>
+              <li class="link-item"><a href="#">Movies</a></li>
+              <li class="link-item"><a href="#">Kids</a></li>
+              <li class="link-item"><a href="#">Trending</a></li>
+            </ul>
+
+            <ul>
+              <h4 class="link-heading">Help</h4>
+
+              <li class="link-item"><a href="#">Account & Billing</a></li>
+              <li class="link-item"><a href="#">Plans & Pricing</a></li>
+              <li class="link-item"><a href="#">Supported devices</a></li>
+              <li class="link-item"><a href="#">Accessibility</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-copyright">
+          <div class="copyright">
+            <p>&copy; Copyright 2022 CineMaxx</p>
+          </div>
+
+          <div class="wrapper">
+            <a href="#">Privacy policy</a>
+            <a href="#">Terms and conditions</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Back To Top Section -->
+
+    <a href="#home" class="gotop"><ion-icon name="arrow-up-outline"></ion-icon></a>
+
+    <script src="app.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
