@@ -1,25 +1,9 @@
-/*-------------------------------------*\
-  #reset.css
-\*-------------------------------------*/
-
-/**
- * copyright 2021 @codewithsadee 
- */
-
-/**
- * Remove default margin & padding
- */
-
 * {
   margin: 0;
   padding: 0;
   transition: all 0.5s ease;
   scroll-behavior: smooth;
 }
-
-/**
-   * more-intuitive box-sizing model.
-   */
 
 *,
 *::before,
@@ -58,7 +42,6 @@ body {
   color: var(--off-white);
   -webkit-font-smoothing: antialiased;
 }
-
 
 /**
    * change image default

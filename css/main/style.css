@@ -757,7 +757,7 @@ ul .link-item:not(:last-child) {
   width: 50px;
   height: 50px;
   background: red;
-  bottom: 40px;
+  bottom: -100px;
   right: 25px;
   text-decoration: none;
   text-align: center;
@@ -772,6 +772,18 @@ ul .link-item:not(:last-child) {
   font-size: 35px;
   text-align: center;
   justify-content: center;
+}
+
+.gotop:hover {
+  background: black;
+  transition: all 0.5s ease;
+  
+}
+
+.gotop-active {
+  bottom: 2rem;
+  transition: all 0.5s ease;
+  
 }
 
 /* Dark Mode Toggle */

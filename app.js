@@ -54,3 +54,13 @@ const chk = document.getElementById('chk');
 chk.addEventListener('change', () => {
     document.body.classList.toggle('dark');
 });
+
+
+// Go Top Hidden
+
+let scroolTop = document.querySelector('.gotop');
+
+window.addEventListener('scroll', () => {
+  scroolTop.classList.toggle('gotop-active', window.scrollY >= 500);
+
+});
